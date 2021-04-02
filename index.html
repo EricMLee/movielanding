@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <div>
+      <div class="row py-4 d-flex justify-content-center">
+        <div class = "logo col-lg-12">
+          <a href = '#' class = "myLogo"><img src = "img/logo.png" width="150" height="150"></a>
+        </div>
+        <div class = "banner col-lg-8">
+          <div class = "content col-xl-6 col-lg-8 col-md-8">
+            <p>After a demon attack leaves his family slain and his sister cursed, Tanjiro embarks upon a perilous journey to find a cure and avenge those he's lost.</p>
+            <!-- <h2>Put something here please</h2>
+            <p>Ever since the death of his father, the burden of supporting the family has fallen
+              upon Tanjirou Kamado's shoulders. Though living impoverished on a remote mountain,
+                the Kamado family are able to enjoy a relatively peaceful and happy life. One day,
+                Tanjirou decides to go down to the local village to make a little money selling charcoal.
+                  On his way back, night falls, forcing Tanjirou to take shelter in the house of a strange man,
+                  who warns him of the existence of flesh-eating demons that lurk in the woods at night.
+            </p><p>
+              When he finally arrives back home the next day, he is met with a horrifying sight—his whole
+              family has been slaughtered. Worse still, the sole survivor is his sister Nezuko, who has
+                been turned into a bloodthirsty demon. Consumed by rage and hatred, Tanjirou swears to avenge
+                his family and stay by his only remaining sibling. Alongside the mysterious group calling themselves
+                  the Demon Slayer Corps, Tanjirou will do whatever it takes to slay the demons and protect the remnants
+                  of his beloved sister's humanity.</p> -->
+            <a href = "#" class = "play" onclick="toggle();"><img src = "img/play.png"> Watch Trailer</a>
+            
+          </div>
+          <div class = "trailer">
+            <video src = "img/video.mp4" controls = "true"></video>
+            <img src = "img/close.png" class = "close" onclick="toggle();">
+          </div>
+        </div>
+        <div class = "col-lg-4">
+          <!-- <ul class = "sci">
+            <li><a href = "#"><img class = "invert" src = "img/facebook.png" height="30px"></a></li>
+            <li><a href = "#"><img class = "invert" src = "img/twitter.png" height="30px"></a></li>
+            <li><a href = "#"><img src = "img/logo_mal.png" width= "150px"></a></li>
+          </ul> -->
+        </div>
+      </div>  
+    </div>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    
+    <script type = "text/javascript">
+      function toggle(){
+        var trailer = document.querySelector('.trailer');
+        var video = document.querySelector('video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+      }
+    </script>
+  </body>
+</html>
